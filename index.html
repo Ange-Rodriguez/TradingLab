@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap"
+    />
+    <link href="./styles.css" rel="stylesheet">
+    <title>TradingLab</title>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="banner">
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+            {
+            "symbols": [
+              {
+                "description": "",
+                "proName": "BINANCE:BTCUSDT"
+              },
+              {
+                "description": "",
+                "proName": "BINANCE:SOLUSD"
+              },
+              {
+                "description": "",
+                "proName": "BINANCE:FTMUSDT"
+              },
+              {
+                "description": "",
+                "proName": "BINANCE:UTKUSDT"
+              },
+              {
+                "description": "",
+                "proName": "BINANCE:MATICUSDT"
+              },
+              {
+                "description": "",
+                "proName": "BINANCE:BNBBUSD"
+              },
+              {
+                "description": "",
+                "proName": "BINANCE:ATOMUSDT"
+              },
+              {
+                "description": "",
+                "proName": "BINANCE:MANAUSDT"
+              },
+              {
+                "description": "",
+                "proName": "BINANCE:BUSDUSDT"
+              },
+              {
+                "description": "",
+                "proName": "BINANCE:BUSDVAI"
+              },
+              {
+                "description": "",
+                "proName": "BINANCE:ADAUSDT"
+              },
+              {
+                "description": "",
+                "proName": "BINANCE:CELOUSDT"
+              },
+              {
+                "description": "",
+                "proName": "HUOBI:CSPRUSDT"
+              },
+              {
+                "description": "",
+                "proName": "BINANCE:EGLDUSDT"
+              },
+              {
+                "description": "",
+                "proName": "BINANCE:USDTDAI"
+              }
+            ],
+            "showSymbolLogo": true,
+            "colorTheme": "dark",
+            "isTransparent": false,
+            "displayMode": "adaptive",
+            "locale": "fr"
+          }
+          </script>
+        </div>
+      </div>
+      <div id="chart-1">
+        <div class="tradingview-widget-container">
+          <div id="tradingview_chart_1"></div>
+        </div>
+      </div>
+      <div id="chart-2">
+        <div class="tradingview-widget-container">
+          <div id="tradingview_chart_2"></div>
+        </div>
+      </div>
+      <div id="chart-3">
+        <div class="tradingview-widget-container">
+          <div id="tradingview_chart_3"></div>
+        </div>
+      </div>
+      <div id="chart-4">
+        <div class="tradingview-widget-container">
+          <div id="tradingview_chart_4"></div>
+        </div>
+      </div>
+      <div id="markets">
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+            {
+              "width": "100%",
+              "height": "100%",
+              "defaultColumn": "overview",
+              "screener_type": "crypto_mkt",
+              "displayCurrency": "USD",
+              "colorTheme": "dark",
+              "locale": "fr",
+              "isTransparent": true
+            }
+          </script>
+        </div>
+      </div>
+    <script src="./renderer.js"></script>
+  </body>
+</html>
